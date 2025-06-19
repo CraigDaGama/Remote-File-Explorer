@@ -1,0 +1,171 @@
+/* Global Reset & Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2e3436;
+  color: #eee;
+  overflow: hidden;
+}
+
+/* Flex Utility */
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+/* Layout Container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #202324;
+  padding: 1.5rem;
+  width: 240px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #4a4a4a;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-item {
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  background-color: #292d2f;
+  color: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main View */
+.main-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #2e3436;
+}
+
+/* Breadcrumb Bar */
+.breadcrumb {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #ddd;
+  background-color: #3c3f41;
+  user-select: none;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.breadcrumb-link {
+  cursor: pointer;
+  color: #4fc3f7;
+  margin-right: 6px;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+/* File List Area */
+.file-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* File Card (each item) */
+.file-item {
+  width: 140px;
+  height: 180px;
+  text-align: center;
+  background-color: #292d2f;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.file-item:hover {
+  background-color: #383c3e;
+  transform: translateY(-3px);
+}
+
+/* Icon/Image */
+.file-icon {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+/* File Name Label */
+.file-name {
+  font-size: 0.85rem;
+  color: #eee;
+  word-break: break-word;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Utility Classes (optional if used) */
+.rounded {
+  border-radius: 0.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
